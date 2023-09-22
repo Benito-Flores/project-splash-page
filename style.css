@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 1px solid red; */
+}
+
+/* typography */
+
+body {
+  font-family: 'Source Sans 3', sans-serif;
+}
+
+h1 {
+  font-size: 2.25rem;
+}
+
+h2 {
+  font-size: 1.3125rem; 
+}
+
+.small-txt {
+  font-size: 0.625rem;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.bold {
+  font-weight: 900;
+}
+
+.main-title {
+  color: #fff;
+  font-weight: 400;
+}
+
+.sub-title,
+.sub-txt {
+  color: #F18119;
+}
+
+.info-subtitle {
+  color: #F18119;
+}
+
+/* style */
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #404040;
+}
+
+.splash-page-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.title-container {
+  padding: 0 2em;
+}
+
+.title-container > *,
+.info-container > * {
+  margin-inline: auto;
+  max-width: 500px;
+}
+
+.title-container {
+  min-height: 50vh;
+  background-image: url(./img/dark-ribs.jpg);
+  background-color: #636363;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sub-txt {
+  order: -1;
+  border-top: .5em solid #F18119;
+  border-image: linear-gradient(to left, #FF713B, #FFA51D) 1;
+}
+
+.sub-title {
+  margin-bottom: 2em;
+}
+
+.info-container {
+  padding: 2em 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #fff;
+}
+
+.info-txt {
+  margin-top: 1em;
+}
+
+form {
+  width: 250px;
+}
+
+input {
+  font-size: 14px;
+  text-align: center;
+  padding: .5em 1.5em;
+  border-radius: 4px;
+  border: 1px solid rgb(138, 138, 138);
+  margin-top: 1em;
+}
+
+button {
+  cursor: pointer;
+  border: 1px solid transparent;
+  color: white;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 900;
+  margin-block: 1em;
+  padding: .40em 5.6em;
+  background-color: #F18119;
+  background-image: linear-gradient(to left, #FF713B, #FFA51D);
+}
+
+.disclaimer {
+  max-width: 150px;
+}
+
+@media (min-width: 700px) {
+
+  .splash-page-container {
+    flex-direction: row;
+    min-height: 100vh;
+  }
+
+}
